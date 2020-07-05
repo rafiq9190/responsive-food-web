@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="./src/styles/style.css"/>
+  </head>
+  <body>
+    <div class="first-navBar">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+          
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">
+                      <img src="src/images/img1.png" width="65">
+                  </a>
+                </li>
+                <!-- <li class="nav-item  bottom-list">
+                  <a class="nav-link" href="#">
+                      <span>
+                          <img src="src/images/location.png" height="15">
+                          <span>36 Park Ave,NYC</span>
+                          
+                      </span>
+                      
+                  </a>
+                </li> -->
+                <li class="nav-item dropdown bottom-list">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span>
+                      <img src="src/images/location.png" height="15">
+                      <span>36 Park Ave,NYC</span>
+                      
+                  </span>
+                  </a>
+                  <div class="dropdown-menu" >
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                
+               
+                <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            <img src="src/images/search.png" height="15">
+                            <span>Search</span>
+                        </span>
+                    </a>
+                  </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            
+                            <span>Become a chief</span>
+                        </span>
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            
+                            <span>Become a Driver</span>
+                        </span>
+                    </a>
+                  </li>
+                </li>  <li class="nav-item bottom-list">
+                    <a class="nav-link" href="#">
+                        <span>
+                            
+                            <span>Help</span>
+                        </span>
+                    </a>
+                  </li>
+                  <li class="nav-item bottom-list bottom-list-last">
+                    <a class="nav-link" href="#">
+                        <span>
+                            
+                            <span><button type="button" class="btn btn-danger">
+                            <img src="src/images/signin.png" width="12">
+                                SignIn</button>
+                            </span>
+                            <span class="last-icon-img">
+                                <img src="src/images/lastnavicon.png " width="15">
+                            </span>
+                        </span>
+                    </a>
+                  </li>
+                
+              </ul>
+              
+            </div>
+          </nav>
+    </div>
+    <!---------------------------second Navbar  ------------------------>
+    <div class=" second-navbar ">
+        <div class="container ">
+            <div class="row ">
+              <div class="col-lg-6 col-sm-12 img-fluid img1 ">
+                <img src="src/images/enjoy.png" width='450'>
+              </div>
+              <div class="col  img-fluid img2">
+                <img src="src/images/food1.png" width="380">
+
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!---------------------------second Navbar ended  ------------------------>
+                <!---------------------------filter section start  ------------------------>
+          <div class="container">
+            <div class="row">
+                <div class="col img3">
+                   <img src="src/images/17.png">
+                </div>
+                <div class="col-lg-3 col-sm-12 mx-auto rating-col">
+         
+                    <div class="dropdown show">
+                      <span>Sort:</span>
+                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Ratings
+                      </a>
+                    
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+          
+                    <div class="filter-section img4">
+                    <img src="src/images/filter.png" alt="">
+                    <span>Filter</span>
+                    </div>
+          
+                  </div>
+                    <!---------------------------filter section ended  ------------------------>
+                      <!---------------------------food card started   ------------------------>
+                      <div class="food-cart">
+                        <div class="container">
+                            <div class="row">
+                            <div class="col-lg-3 col-sm-12 cart1">
+                               
+                              <div class="card" style="width: 16rem;">
+                                 <div class="cart-top-content">
+                                  <div class="colo1-heart">
+                                  <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                  </div>
+                                  <div class="colo2-heart" id="colo2-heart">
+                                        <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                  </div>
+                                </div> 
+                                <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Jumbo Shrimp</h5>
+                                  <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                  <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-12 cart1">
+           
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-sm-12 cart1">
+           
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="col-lg-3 col-sm-12 cart1">
+           
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <br>
+                               <!--------------------------- 2nd row start of food card started   ------------------------>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-12 cart1">
+                                           
+                                          <div class="card" style="width: 16rem;">
+                                             <div class="cart-top-content">
+                                              <div class="colo1-heart">
+                                              <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                              </div>
+                                              <div class="colo2-heart" id="colo2-heart">
+                                                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                              </div>
+                                            </div> 
+                                            <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Jumbo Shrimp</h5>
+                                              <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                              <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+            
+                                          <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                </div>
+                            </div> 
+                            <!--------------------------- 3nd row start of food card started   ------------------------>
+                            <div class="container">
+                                <div class="row mt-4">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-sm-12 cart1">
+                                           
+                                          <div class="card" style="width: 16rem;">
+                                             <div class="cart-top-content">
+                                              <div class="colo1-heart">
+                                              <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                              </div>
+                                              <div class="colo2-heart" id="colo2-heart">
+                                                    <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                              </div>
+                                            </div> 
+                                            <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Jumbo Shrimp</h5>
+                                              <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                              <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+            
+                                          <div class="col-lg-3 col-sm-12 cart1">
+                       
+                                            <div class="card" style="width: 16rem;">
+                                               <div class="cart-top-content">
+                                                <div class="colo1-heart">
+                                                <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                                </div>
+                                                <div class="colo2-heart" id="colo2-heart">
+                                                      <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                                </div>
+                                              </div> 
+                                              <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                              <div class="card-body">
+                                                <h5 class="card-title">Jumbo Shrimp</h5>
+                                                <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                                <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                          </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!---------------------------  food card started ended   ------------------------>
+                        <!---------------------------  show more started ended   ------------------------>
+                        
+                        <div class="show-more-btn">
+                            <button type="button" class="btn  show-more " onclick="showItem()">Show More</button>
+                          </div>
+                          <br><br>
+                          
+                            <div class="container" id="show-content" style="display: none;">
+                              <div class="row">
+                              <div class="col-lg-3 col-sm-12 cart1">
+                                 
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-sm-12 cart1">
+                                 
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-sm-12 cart1">
+                                 
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-sm-12 cart1">
+                                 
+                                <div class="card" style="width: 16rem;">
+                                   <div class="cart-top-content">
+                                    <div class="colo1-heart">
+                                    <span style="margin-left:2px"> <i class="fa fa-star" aria-hidden="true"></i> 4.5</span> 
+                                    </div>
+                                    <div class="colo2-heart" id="colo2-heart">
+                                          <i class="fa fa-heart-o"  aria-hidden="true" onclick="changeImage()"></i>
+                                    </div>
+                                  </div> 
+                                  <img src="src/images/food2.png" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Jumbo Shrimp</h5>
+                                    <p class="card-text">by Jonathan doe <br>$9.99</p>
+                                    <button href="#" class="cart-button"><i class="fa fa-plus" style="color: rgb(141, 84, 64);" aria-hidden="true"></i> Add </button>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <br><br>
+                              <div class="show-more-btn">
+                                <button type="button" class="btn  show-more " onclick="LessItem()">Show Less</button>
+                              </div>
+                              </div>
+                          <br><br>
+
+                  <!-- Site footer -->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6">
+              <h6>About</h6>
+              <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+            </div>
+            
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Categories</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+                <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+                <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+                <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+                <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+                <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xs-6 col-md-3">
+              <h6>Quick Links</h6>
+              <ul class="footer-links">
+                <li><a href="http://scanfcode.com/about/">About Us</a></li>
+                <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+                <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+                <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+                <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+          <hr>
+        </div>
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+           <a href="#">Scanfcode</a>.
+              </p>
+            </div>
+  
+            
+          </div>
+        </div>
+  </footer>               
+                      
+                      
+          </div>
+          
+              
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      
+        function changeImage(){
+             var a = document.getElementById('colo2-heart');
+             a.innerHTML = ' <i class="fa fa-heart"  aria-hidden="true">'
+        }
+
+        function showItem(){
+          var a = document.getElementById('show-content').style.display='block';
+         //  var b = document.getElementById('top-food-list').innerHTML += a;
+        }
+        function LessItem(){
+          var a = document.getElementById('show-content').style.display='none';
+         //  var b = document.getElementById('top-food-list').innerHTML += a;
+        }
+
+ </script>
+  </body>
+</html>
